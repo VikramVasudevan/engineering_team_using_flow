@@ -1,3 +1,8 @@
+import sys
+import os
+
+sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
+
 import time
 import random
 import gradio as gr
