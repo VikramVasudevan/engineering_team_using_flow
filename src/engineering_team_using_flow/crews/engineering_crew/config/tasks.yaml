@@ -68,7 +68,7 @@ frontend_code_review_task:
   description: >
     Review the python code provided by the frontend engineer and ensure it is done according to the design provided by the development lead. 
     Just output pure Markdown only. no ```markdown
-    DO NOT pass if atleast one MAJOR issue is open. Do not review test coverage as that will be handled by the tester. 
+    be lenient in your reviews. Do not review test coverage as that will be handled by the tester. 
     At the end, provide a summary mentioning whether the code passes the review or not (a clear yes or no should do.)
     here is the latest code submitted by the developer: 
     \n---------------------------------------\n
@@ -87,6 +87,8 @@ test_preparation_task:
   description: >
     Write comprehensive unit test cases for the oode written by the backend & the frontend engineers for the given requirement.  Ensure all edge scenarios are covered comprehensively.
     Do not return any backquotes or unnecessary markdown formatting. Just pure python code should suffice. Make sure the code is well documented and logged.
+    backend module name is: backend
+    frontend module name is: app
     here is the backend code 
     \n---------------------------------------
     {backend_code}

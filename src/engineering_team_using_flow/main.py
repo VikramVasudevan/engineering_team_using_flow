@@ -24,7 +24,7 @@ class EngineeringState(BaseModel):
     backend_code_review_feedbacks: list[CodeReviewFeedback] = []
     frontend_code_review_feedbacks: list[CodeReviewFeedback] = []
 
-MAX_REVIEW_ITERATIONS = 2
+MAX_REVIEW_ITERATIONS = 3
 BUSINESS_REQUIREMENTS: list[EngineeringState] = [
     EngineeringState(
         module_name="mod_series_eval",
