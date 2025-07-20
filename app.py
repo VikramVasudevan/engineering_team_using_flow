@@ -71,7 +71,10 @@ def run_and_stream(module_name: str, requirements: str):
 
         else:
             time.sleep(0.2)  # small delay to prevent CPU spin
-
+    
+    curr_role = "assistant" if curr_role == "user" else "user"
+    messages.append({"role":curr_role, "content" : "# All Done!"})
+    yield(messages)
 
 # UI
 with gr.Blocks(theme=gr.themes.Ocean()) as demo:
